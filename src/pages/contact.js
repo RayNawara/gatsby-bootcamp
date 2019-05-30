@@ -9,19 +9,27 @@ const ContactPage = () => {
       <Layout>
       <Head title="Contact" />
       <h1>Contact</h1>
-      <div class="form-group">
-        <label for="exampleFormControlInput1">Name</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your name" />
-      </div>
-      <div class="form-group">
-        <label for="exampleFormControlInput2">Email address</label>
-        <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com" />
-      </div>
-      <div class="form-group">
-        <label for="exampleFormControlTextarea1">Your Message</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-      <input class="btn btn-primary" type="submit" value="Submit"></input>
+      <p>Hi! I'm a very experienced Enterprise developer who  has moved to the web!
+
+                    I enjoy programming with React, Gatsby, GraphQL, Ruby on Rails and node.js and I'm trying to learn more every day.
+
+                    If you have anything I can help you with, please feel free to contact me below!
+
+                    Thanks!</p>
+
+        <form action="https://formspree.io/rjnawara@gmail.com" method="POST" >
+          <div class="row">
+            <div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
+            <div class="col-6 col-12-mobile"><input type="email" name="email" placeholder="Email" /></div>
+            <div class="col-12">
+              <textarea name="message" placeholder="Message"></textarea>
+            </div>
+            <div class="col-12">
+              <input type="submit" value="Send Message" />
+            </div>
+          </div>
+        </form>
+
       <p>Check me out @ <a href="https://www.linkedin.com/in/rj-nawara-533797162" target="blank">LinkedIn</a></p>
       </Layout>
     </div>
