@@ -5,7 +5,7 @@ import Head from '../components/head'
 
 const ContactPage = () => {
   return (
-    <div class="container">
+    <div className="container">
       <Layout>
       <Head title="Contact" />
       <h1>Contact</h1>
@@ -18,13 +18,13 @@ const ContactPage = () => {
                     Thanks!</p>
 
         <form action="https://formspree.io/rjnawara@gmail.com" method="POST" >
-          <div class="row">
-            <div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-            <div class="col-6 col-12-mobile"><input type="email" name="email" placeholder="Email" /></div>
-            <div class="col-12">
+          <div className="row">
+            <div className="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
+            <div className="col-6 col-12-mobile"><input type="email" name="email" placeholder="Email" /></div>
+            <div className="col-12 col-12-mobile">
               <textarea name="message" placeholder="Message"></textarea>
             </div>
-            <div class="col-12">
+            <div className="col-12">
               <input type="submit" value="Send Message" />
             </div>
           </div>
