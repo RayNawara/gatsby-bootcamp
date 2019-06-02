@@ -2,6 +2,7 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import Head from '../components/head'
+import contactStyles from './contact.module.scss'
 
 const ContactPage = () => {
   return (
@@ -18,13 +19,13 @@ const ContactPage = () => {
                     Thanks!</p>
 
         <form action="https://formspree.io/rjnawara@gmail.com" method="POST" >
-          <div className="row">
-            <div className="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-            <div className="col-6 col-12-mobile"><input type="email" name="email" placeholder="Email" /></div>
-            <div className="col-12 col-12-mobile">
+          <div className={contactStyles.formStyle1}>
+            <div className={contactStyles.required}><input type="text" name="name" placeholder="Name" /></div>
+            <div className={contactStyles.required}><input type="email" name="email" placeholder="Email" /></div>
+            <div className={contactStyles.required}>
               <textarea name="message" placeholder="Message"></textarea>
             </div>
-            <div className="col-12">
+            <div >
               <input type="submit" value="Send Message" />
             </div>
           </div>
